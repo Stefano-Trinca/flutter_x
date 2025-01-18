@@ -11,7 +11,7 @@ To use the `flutter_x` package, add it to your project's Flutter dependencies by
   apix:
     git:
       url: https://github.com/Stefano-Trinca/flutter_x.git
-      ref: 0.0.4
+      ref: 0.1.0
 ```
 
 After adding the package, you can import it into your Dart project:
