@@ -1,4 +1,4 @@
-library apix;
+library flutter_x;
 
 //
 //

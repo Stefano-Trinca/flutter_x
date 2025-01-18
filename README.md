@@ -1,28 +1,28 @@
 
-# APIX
+# Flutter X
 
-APIX is a Flutter package designed to facilitate and accelerate Dart code writing by introducing various useful extensions.
+Flutter X is a Flutter package designed to facilitate and accelerate Dart code writing by introducing various useful extensions.
 
 ## Getting Started
 
-To use the `apix` package, add it to your project's Flutter dependencies by modifying the `pubspec.yaml` file:
+To use the `flutter_x` package, add it to your project's Flutter dependencies by modifying the `pubspec.yaml` file:
 
 ```yaml
   apix:
     git:
-      url: https://github.com/Stefano-Trinca/apix.git
+      url: https://github.com/Stefano-Trinca/flutter_x.git
       ref: 0.0.4
 ```
 
 After adding the package, you can import it into your Dart project:
 
 ```dart
-import 'package:apix/apix.dart';
+import 'package:flutter_x/flutter_x.dart';
 ```
 
 ## Usage Examples
 
-Here are some examples of how the extensions provided by `apix` can be used to improve and simplify your code:
+Here are some examples of how the extensions provided by `flutter_x` can be used to improve and simplify your code:
 
 ### Using Numeric Extensions
 
@@ -73,7 +73,7 @@ For more information on the extensions provided and how to use them, visit the [
 
 ## Contributing
 
-If you wish to contribute to the `apix` package, you are welcome! Check out the [open issues](https://github.com/Stefano-Trinca/apix/issues) or submit a pull request.
+If you wish to contribute to the `flutter_x` package, you are welcome! Check out the [open issues](https://github.com/Stefano-Trinca/flutter_x/issues) or submit a pull request.
 
 ## License
 

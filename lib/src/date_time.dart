@@ -1,9 +1,8 @@
-import 'package:apix/apix.dart';
+import 'package:flutter_x/flutter_x.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 extension DateTimeFlatten on DateTime {
-
   /// Flattend the [DateTime] to year
   ///
   /// DateTime(year)
@@ -59,10 +58,12 @@ extension DateTimeEvaluations on DateTime {
   bool get isToday => isSameDay(DateTime.now());
 
   /// Determinate if the [DateTime] is Tomorrow
-  bool get isTomorrow => flattenDay().difference(DateTime.now().flattenDay()).inDays == 1;
+  bool get isTomorrow =>
+      flattenDay().difference(DateTime.now().flattenDay()).inDays == 1;
 
   /// Determinate if the [DateTime] is Yesterday
-  bool get isYesterday => flattenDay().difference(DateTime.now().flattenDay()).inDays == -1;
+  bool get isYesterday =>
+      flattenDay().difference(DateTime.now().flattenDay()).inDays == -1;
 
   /// Calculates week number from a date as per https://en.wikipedia.org/wiki/ISO_week_date#Calculation
   int get weekNumber {
@@ -87,10 +88,10 @@ extension DateTimeEvaluations on DateTime {
   /// DateTimeRange thisWeek = now.weekRange;
   /// print("Week starts on: ${thisWeek.start} and ends on: ${thisWeek.end}");
   /// ```
-  DateTimeRange get weekRange{
-      DateTime startOfWeek = subtract(Duration(days: weekday - 1));
-      DateTime endOfWeek = startOfWeek.add(const Duration(days: 6));
-      return DateTimeRange(start: startOfWeek, end: endOfWeek);
+  DateTimeRange get weekRange {
+    DateTime startOfWeek = subtract(Duration(days: weekday - 1));
+    DateTime endOfWeek = startOfWeek.add(const Duration(days: 6));
+    return DateTimeRange(start: startOfWeek, end: endOfWeek);
   }
 
   /// Calculates and returns the `DateTimeRange` for the weekend of the week containing this `DateTime`.
@@ -115,7 +116,6 @@ extension DateTimeEvaluations on DateTime {
     DateTime endOfWeekend = startOfWeekend.add(const Duration(days: 1));
     return DateTimeRange(start: startOfWeekend, end: endOfWeekend);
   }
-
 }
 
 extension IntSinceEpocheExt on int? {
@@ -198,7 +198,4 @@ extension DateTimeStringConvert on DateTime {
   ///
   /// ex: 10:43:53
   String get fullTimeOfDayToString => format('HH:mm:ss');
-
-
-
 }

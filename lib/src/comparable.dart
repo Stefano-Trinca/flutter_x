@@ -1,5 +1,4 @@
-
-import 'package:apix/apix.dart';
+import 'package:flutter_x/flutter_x.dart';
 
 /// Provides comparison operators for [Comparable] types.
 extension ComparableSmallerExtension<T extends Comparable<T>> on T {

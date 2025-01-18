@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import '../apix.dart';
+import '../flutter_x.dart';
 
 extension NumCoerceInExtension<T extends num> on T {
   /// Ensures that this value lies in the specified range
@@ -64,7 +64,8 @@ extension NumBetweenExtension<T extends num> on T {
   /// Returns true if between [first] and [endInclusive].
   ///
   /// Alias for `first.rangeTo(endInclusive).contains(this)`
-  bool between(num first, num endInclusive) => first.rangeTo(endInclusive).contains(this);
+  bool between(num first, num endInclusive) =>
+      first.rangeTo(endInclusive).contains(this);
 }
 
 extension IntToBytesExtension<T extends int> on T {

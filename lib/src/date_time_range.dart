@@ -1,4 +1,4 @@
-import 'package:apix/apix.dart';
+import 'package:flutter_x/flutter_x.dart';
 import 'package:flutter/material.dart';
 
 extension DateTimeRangeEvaluationExt on DateTimeRange {
@@ -72,11 +72,9 @@ extension DateTimeRangeEvaluationExt on DateTimeRange {
   /// The center [DateTime] of the [DateTimeRange].
   DateTime get centerDateTime =>
       start.add(Duration(days: (totalDays / 2).floor()));
-
 }
 
 extension DateTimeRangeDuration on DateTimeRange {
-
   /// Calculates the total number of months between two dates.
   ///
   /// This property computes the total months spanned between the `start` and `end` dates,
@@ -120,13 +118,9 @@ extension DateTimeRangeDuration on DateTimeRange {
 
   /// Returns the total duration of the [DateTimeRange] in minutes.
   int get totalMinutes => end.difference(start).inMinutes;
-
-
 }
 
-
-extension DateTimeRangeSpanned on DateTimeRange{
-
+extension DateTimeRangeSpanned on DateTimeRange {
   /// Gets a list of `DateTime` objects representing each day within the date range.
   ///
   /// This getter calculates and returns a list of `DateTime` objects, one for each day from the
@@ -149,7 +143,7 @@ extension DateTimeRangeSpanned on DateTimeRange{
   ///
   /// This property is useful for operations requiring the enumeration of each day within a range,
   /// such as generating calendar views, scheduling, or performing date-based calculations.
-  List<DateTime> get listOfDates{
+  List<DateTime> get listOfDates {
     List<DateTime> dates = [];
     DateTime current = start;
     while (current.isBefore(end) || current.isAtSameMomentAs(end)) {
@@ -158,6 +152,4 @@ extension DateTimeRangeSpanned on DateTimeRange{
     }
     return dates;
   }
-
 }
-
